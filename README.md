@@ -1,2 +1,2 @@
-# not-tomorrow
-My own website for recording working hours
+# Not Tomorrow 
+My own website for recording working hours.

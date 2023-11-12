@@ -1,3 +1,5 @@
 .idea
 /node_modules/
 /frontend/.vscode/
+/BackEnd/client/dist/
+BackEnd/.env

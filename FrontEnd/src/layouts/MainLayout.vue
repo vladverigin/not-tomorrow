@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import useUserStore from "stores/userStore/user-store";
+
+const userStore = useUserStore();
+</script>
+
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
@@ -14,7 +20,7 @@
         <q-separator dark vertical />
         <q-btn stretch flat label="Reports" to="/reports" />
         <q-separator dark vertical />
-        <q-btn-dropdown stretch flat label="Username">
+        <q-btn-dropdown stretch flat :label="userStore.firstname">
           <q-list>
             <q-item-label header>Last Reports</q-item-label>
             <q-item v-for="n in 3" :key="`x.${n}`" clickable v-close-popup tabindex="0">
@@ -38,6 +44,7 @@
               </q-btn>
               <q-btn
                 color="red"
+                @click="userStore.logout()"
               >
                 Log out
               </q-btn>

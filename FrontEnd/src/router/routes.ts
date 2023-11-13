@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router';
-import authGuard from "src/router/auth-guard";
+import authGuard from 'src/router/auth-guard';
 
 const routes: RouteRecordRaw[] = [
   {

@@ -1,6 +1,5 @@
-import useUserStore from "stores/userStore/user-store";
-import {NavigationGuardNext, RouteLocationNormalized} from "vue-router";
-import router from "src/router/index";
+import useUserStore from 'stores/userStore/user-store';
+import {NavigationGuardNext, RouteLocationNormalized} from 'vue-router';
 
 const guard = function (to:RouteLocationNormalized, from:RouteLocationNormalized, next:NavigationGuardNext) {
   const userStore = useUserStore();

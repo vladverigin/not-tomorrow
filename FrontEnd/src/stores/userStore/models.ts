@@ -5,3 +5,9 @@ export interface UserStore {
   isAuth:boolean,
   token:string|null,
 }
+
+
+export interface UserCredentials {
+  email:string,
+  password:string;
+}
